@@ -1,1 +1,1 @@
-# ansible-cron-letsencrypt
+# Crontab entry for Letsencrypt renewal

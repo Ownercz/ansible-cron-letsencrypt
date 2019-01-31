@@ -1,0 +1,6 @@
+- cron:
+    name: "Run Letsencrypt renewal"
+    job: "/opt/certbot/certbot-auto renew --pre-hook 'systemctl stop nginx' --post-hook 'systemctl restart nginx' > /dev/null 2>&1"
+    user: root
+    minute: 0
+    hour: 6,20
